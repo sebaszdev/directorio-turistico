@@ -8,7 +8,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { CircleUserRound } from "lucide-react";
 
 export default function Proyecto() {
   const botones = [

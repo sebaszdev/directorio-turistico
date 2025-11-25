@@ -28,10 +28,10 @@ export default function Nombre() {
               Parametro recibido: <strong>{nombreCiudad}</strong>
             </p>
           </CardContent>
+          <Button asChild className="w-50 mx-auto">
+            <Link href="/proyecto/ciudades">Ir a ciudades</Link>
+          </Button>
         </Card>
-        <Button asChild className="w-50 mx-auto">
-          <Link href="/proyecto/ciudades">Ir a ciudades</Link>
-        </Button>
       </main>
     </>
   );
