@@ -5,6 +5,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Medellin() {
   return (
@@ -22,8 +24,8 @@ export default function Medellin() {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center text-card-foreground font-semibold tracking-tight first:mt-0">
           Poblacion: 2.6 millones de paisas
         </h2>
-        <p className="leading-7 text-center text-card-foreground [&:not(:first-child)]:mt-6">
-          Medellin es una ciudad ubicada en el valle de aburra en el departamento de Antioquia. Es conocida por su clima primaveral, su innovación cultural, su gente acogedora y sus atractivos nocturnos. Medellin posee además uno de los sistemas de transporte masivos mas innovadores en colombia, contando con el metro, tranvia, metrocable y demas integraciones.
+        <p className="leading-7 text-center text-card-foreground [&:not(:first-child)]:mt-10">
+          Medellín, conocida como la “Ciudad de la Eterna Primavera”, se destaca por su clima agradable y su espíritu innovador. Rodeada de montañas, combina modernidad con tradición paisa. Es un centro cultural y tecnológico en constante transformación.
         </p>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl text-center my-10 font-semibold tracking-tight first:mt-0">
           Atracciones turisticas en medellin
@@ -51,6 +53,9 @@ export default function Medellin() {
             </CardContent>
           </Card>
         </div>
+        <Button className="w-50 mx-auto mt-60" asChild>
+          <Link href="/proyecto/ciudades">Ir a ciudades</Link>
+        </Button>
       </div>
   );
 }
