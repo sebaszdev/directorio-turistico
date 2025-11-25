@@ -10,7 +10,8 @@ import Link from "next/link";
 export default function Cali() {
   return (
     <>
-      <div className="w-full flex flex-col pt-10 gap-y-2 h-100
+      <div
+        className="w-full flex flex-col pt-10 gap-y-2 h-100
       bg-[url(https://i.redd.it/o2v8ga5q6qo21.jpg)]
       bg-cover bg-no-repeat bg-center"
       >
@@ -25,7 +26,11 @@ export default function Cali() {
         </h2>
       </div>
       <p className="leading-7 text-center [&:not(:first-child)]:mt-6">
-        Cali, conocida como la “Sucursal del Cielo”, es una ciudad vibrante del suroccidente de Colombia famosa por su alegría, su clima cálido y su tradición salsera. Rodeada de montañas y atravesada por el río Cali, combina modernidad con riqueza cultural. Es un importante centro económico, deportivo y artístico del país.
+        Cali, conocida como la “Sucursal del Cielo”, es una ciudad vibrante del
+        suroccidente de Colombia famosa por su alegría, su clima cálido y su
+        tradición salsera. Rodeada de montañas y atravesada por el río Cali,
+        combina modernidad con riqueza cultural. Es un importante centro
+        económico, deportivo y artístico del país.
       </p>
       <h2 className="scroll-m-20 border-b pb-2 text-3xl text-center mt-10 font-semibold tracking-tight first:mt-0">
         Atracciones en Cali
@@ -38,7 +43,11 @@ export default function Cali() {
             </PopoverTrigger>
             <PopoverContent>
               <p className="leading-7 [&:not(:first-child)]:mt-6">
-                El Museo de Arte Moderno La Tertulia es una joya cultural en Cali Colombia. Este lugar es reconocido tanto a nivel nacional como internacional por su valiosa colección de arte moderno y contemporáneo, y es un lugar imperdible para los amantes del arte y los visitantes curiosos.
+                El Museo de Arte Moderno La Tertulia es una joya cultural en
+                Cali Colombia. Este lugar es reconocido tanto a nivel nacional
+                como internacional por su valiosa colección de arte moderno y
+                contemporáneo, y es un lugar imperdible para los amantes del
+                arte y los visitantes curiosos.
               </p>
             </PopoverContent>
           </Popover>
@@ -54,13 +63,17 @@ export default function Cali() {
             </PopoverTrigger>
             <PopoverContent>
               <p className="leading-7 [&:not(:first-child)]:mt-6">
-                El Cerro de las Tres Cruces en Cali es un santuario natural que se eleva sobre la ciudad de Cali, ofreciendo una experiencia única y mágica. Con sus tres cruces emblemáticas y vistas panorámicas impresionantes, este lugar sagrado invita a conectarse con la naturaleza y encontrar paz en lo alto.
+                El Cerro de las Tres Cruces en Cali es un santuario natural que
+                se eleva sobre la ciudad de Cali, ofreciendo una experiencia
+                única y mágica. Con sus tres cruces emblemáticas y vistas
+                panorámicas impresionantes, este lugar sagrado invita a
+                conectarse con la naturaleza y encontrar paz en lo alto.
               </p>
             </PopoverContent>
           </Popover>
           <MousePointerClick size={30} className="my-auto" />
         </div>
-      </div>       
+      </div>
     </>
   );
 }

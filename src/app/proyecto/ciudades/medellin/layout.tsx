@@ -3,9 +3,5 @@ export default function MedellinLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <main className="flex-1 h-full">
-      {children}
-    </main>
-  );
+  return <main className="flex-1 h-full">{children}</main>;
 }

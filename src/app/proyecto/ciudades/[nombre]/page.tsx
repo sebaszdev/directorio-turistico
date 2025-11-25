@@ -2,12 +2,7 @@
 
 import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 
 export default function Nombre() {
@@ -22,11 +17,14 @@ export default function Nombre() {
         </h1>
         <Card className="w-xl">
           <CardHeader>
-            <CardTitle className="text-xl font-semibold text-center">Página dinamica</CardTitle>
+            <CardTitle className="text-xl font-semibold text-center">
+              Página dinamica
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="leading-7 [&:not(:first-child)]:mt-6">
-              Esta página recibe un parametro en la ruta /proyecto/ciudades/[nombre] y lo muestra en el texto de arriba.
+              Esta página recibe un parametro en la ruta
+              /proyecto/ciudades/[nombre] y lo muestra en el texto de arriba.
               Parametro recibido: <strong>{nombreCiudad}</strong>
             </p>
           </CardContent>

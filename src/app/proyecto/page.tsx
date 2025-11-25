@@ -24,7 +24,7 @@ export default function Proyecto() {
 
   return (
     <>
-      <PageHeader botones={botones}/>
+      <PageHeader botones={botones} />
       <main className="flex flex-1 flex-col justify-center">
         <Card className="flex max-w-2xl mx-auto bg-popover/80">
           <CardHeader>
@@ -36,7 +36,13 @@ export default function Proyecto() {
           </CardHeader>
           <CardContent>
             <p className="leading-7 text-justify [&:not(:first-child)]:mt-6">
-              Directorio Turístico Interactivo es una aplicación web desarrollada con Next.js y TailwindCSS que presenta información de varias ciudades colombianas mediante rutas estáticas y dinámicas. Incluye componentes personalizados, páginas temáticas por ciudad, un listado visual de destinos y un formulario de contacto construido con shadcn/ui. El proyecto demuestra organización modular, diseño adaptable y uso de buenas prácticas en React.
+              Directorio Turístico Interactivo es una aplicación web
+              desarrollada con Next.js y TailwindCSS que presenta información de
+              varias ciudades colombianas mediante rutas estáticas y dinámicas.
+              Incluye componentes personalizados, páginas temáticas por ciudad,
+              un listado visual de destinos y un formulario de contacto
+              construido con shadcn/ui. El proyecto demuestra organización
+              modular, diseño adaptable y uso de buenas prácticas en React.
             </p>
           </CardContent>
           <CardFooter className="flex justify-center gap-x-4 mt-40">

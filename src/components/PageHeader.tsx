@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 
 interface Props {
   className?: string;
-  botones: {texto: string, link: string}[];
-};
+  botones: { texto: string; link: string }[];
+}
 
 /**
  * Header que contiene un nav para navegar
@@ -23,7 +23,9 @@ export default function PageHeader({ className, botones }: Props) {
           {botones.map((boton, index) => (
             <NavigationMenuItem key={index}>
               <NavigationMenuLink asChild className="rounded-xl">
-                <Link href={boton.link} className="hover:underline">{boton.texto}</Link>
+                <Link href={boton.link} className="hover:underline">
+                  {boton.texto}
+                </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
           ))}

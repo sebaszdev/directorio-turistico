@@ -27,49 +27,47 @@ export default function Contacto() {
 
   return (
     <>
-    <PageHeader botones={botones} />
-    <main className="flex-1 flex flex-col flex-wrap content-center pt-15 gap-y-25">
+      <PageHeader botones={botones} />
+      <main className="flex-1 flex flex-col flex-wrap content-center pt-15 gap-y-25">
         <div className="flex w-full justify-center gap-x-2">
           <SectionTitle>Contacto</SectionTitle>
           <CircleUserRound size={30} className="my-auto" />
         </div>
         <Card className="flex gap-y-15 w-xl mx-auto">
-        <CardHeader>
-            <CardTitle className="text-center font-semibold text-lg">Contactanos</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <form>
-            <div className="flex flex-col gap-6">
-              <div className="grid gap-2">
-                <Label htmlFor="nombre">Nombre</Label>
-                <Input
-                  id="nombre"
-                  type="nombre"
-                  required
-                />
-              </div>
-              <div className="grid gap-2">
-                <div className="flex items-center">
-                  <Label htmlFor="correo">Correo electrónico</Label>
+          <CardHeader>
+            <CardTitle className="text-center font-semibold text-lg">
+              Contactanos
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <form>
+              <div className="flex flex-col gap-6">
+                <div className="grid gap-2">
+                  <Label htmlFor="nombre">Nombre</Label>
+                  <Input id="nombre" type="nombre" required />
                 </div>
-                <Input
-                  id="password"
-                  type="password"
-                  placeholder="usuario@example.com"
-                  required
-                />
+                <div className="grid gap-2">
+                  <div className="flex items-center">
+                    <Label htmlFor="correo">Correo electrónico</Label>
+                  </div>
+                  <Input
+                    id="password"
+                    type="password"
+                    placeholder="usuario@example.com"
+                    required
+                  />
+                </div>
+                <Textarea placeholder="¿Tienes algo por decirnos?" required />
               </div>
-              <Textarea placeholder="¿Tienes algo por decirnos?" required />
-            </div>
-          </form>
-        </CardContent>
-        <CardFooter className="flex-col gap-2">
-          <Button type="submit" className="w-full">
-            Enviar
-          </Button>
-        </CardFooter>
-      </Card>
-    </main>
-  </>
+            </form>
+          </CardContent>
+          <CardFooter className="flex-col gap-2">
+            <Button type="submit" className="w-full">
+              Enviar
+            </Button>
+          </CardFooter>
+        </Card>
+      </main>
+    </>
   );
 }

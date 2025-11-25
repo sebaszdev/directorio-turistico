@@ -19,22 +19,19 @@ interface Props {
 /**
  * Tarjeta propia para presentar mi información
  */
-export default function StudentCard({ name, program, description, children }: Props) {
+export default function StudentCard({
+  name,
+  program,
+  description,
+  children,
+}: Props) {
   return (
     <Card className="grid grid-cols-2 grid-rows-2 gap-4 w-full max-w-3xl">
-      <CardHeader className="row-span-2">
-        {children}
-      </CardHeader>
+      <CardHeader className="row-span-2">{children}</CardHeader>
       <CardContent>
-        <CardTitle>
-          {name}
-        </CardTitle>
-        <CardDescription>
-          {program}
-        </CardDescription>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          {description}
-        </p>
+        <CardTitle>{name}</CardTitle>
+        <CardDescription>{program}</CardDescription>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">{description}</p>
       </CardContent>
       <CardFooter className="col-start-2">
         <Button>

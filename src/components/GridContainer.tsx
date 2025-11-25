@@ -1,6 +1,6 @@
 interface Props {
   children: React.ReactNode;
-};
+}
 
 /**
  * Contenedor que organiza los elementos en un grid
