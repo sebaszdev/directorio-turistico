@@ -44,7 +44,7 @@ export default function Cali() {
           </Popover>
           <MousePointerClick size={30} className="my-auto" />
         </div>
-        <Button asChild>
+        <Button asChild className="w-50">
           <Link href="/proyecto/ciudades">Ir a ciudades</Link>
         </Button>
         <div className="flex gap-x-1">

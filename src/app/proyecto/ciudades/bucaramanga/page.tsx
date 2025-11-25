@@ -31,9 +31,11 @@ export default function Bucaramanga() {
           <h2 className="scroll-m-20 text-center text-background border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
             Población: 0.6 millones de bumangueses
           </h2>
-          <p className="leading-7 text-center text-background [&:not(:first-child)]:mt-6">
-            Bucaramanga, conocida como “La Ciudad Bonita”, es la capital del departamento de Santander en Colombia. Se destaca por su clima agradable, su ambiente tranquilo y su abundante oferta de parques y zonas verdes. Es un centro regional de comercio, educación y servicios, con una creciente vida cultural y gastronómica. Su cercanía al Cañón del Chicamocha la convierte también en un destino para actividades de aventura y ecoturismo.
-          </p>
+          <div className="w-full max-w-3xl bg-muted opacity-85 rounded-lg p-4 mx-auto mt-4">
+            <p className="leading-7 text-center [&:not(:first-child)]:mt-6">
+              Bucaramanga, conocida como “La Ciudad Bonita”, es la capital del departamento de Santander en Colombia. Se destaca por su clima agradable, su ambiente tranquilo y su abundante oferta de parques y zonas verdes. Es un centro regional de comercio, educación y servicios, con una creciente vida cultural y gastronómica. Su cercanía al Cañón del Chicamocha la convierte también en un destino para actividades de aventura y ecoturismo.
+            </p>
+          </div>
         </div>
         <div className="flex flex-col flex-wrap content-center h-full pt-10">
           <h2 className="scroll-m-20 text-center pb-2 text-3xl font-semibold tracking-tight first:mt-0">
@@ -69,7 +71,7 @@ export default function Bucaramanga() {
           <CarouselPrevious />
           <CarouselNext />
           </Carousel>
-          <Button className="mt-20" asChild>
+          <Button className="mt-20 mx-auto w-50" asChild>
             <Link href="/proyecto/ciudades">Ir a ciudades</Link>
           </Button>
         </div>
