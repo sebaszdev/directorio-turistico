@@ -10,14 +10,32 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { CircleUserRound } from "lucide-react";
+import PageHeader from "@/components/PageHeader";
 
 export default function Contacto() {
+  const botones = [
+    {
+      texto: "Proyecto",
+      link: "/proyecto",
+    },
+    {
+      texto: "Ciudades",
+      link: "/proyecto/ciudades",
+    },
+  ];
+
   return (
+    <>
+    <PageHeader botones={botones} />
     <main className="flex-1 flex flex-col flex-wrap content-center pt-15 gap-y-25">
-      <SectionTitle>Contacto</SectionTitle>
-        <Card className="flex gap-y-15 w-xl">
+        <div className="flex w-full justify-center gap-x-2">
+          <SectionTitle>Contacto</SectionTitle>
+          <CircleUserRound size={30} className="my-auto" />
+        </div>
+        <Card className="flex gap-y-15 w-xl mx-auto">
         <CardHeader>
-          <CardTitle className="text-center font-semibold text-lg">Contactanos</CardTitle>
+            <CardTitle className="text-center font-semibold text-lg">Contactanos</CardTitle>
         </CardHeader>
         <CardContent>
           <form>
@@ -52,5 +70,6 @@ export default function Contacto() {
         </CardFooter>
       </Card>
     </main>
+  </>
   );
 }

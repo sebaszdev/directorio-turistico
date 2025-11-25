@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Nombre() {
   const params = useParams();
@@ -15,9 +16,9 @@ export default function Nombre() {
 
   return (
     <>
-      <main className="flex-1 flex flex-col flex-wrap content-center justify-center gap-y-20">
+      <main className="flex-1 flex flex-col flex-wrap content-center justify-center gap-y-10">
         <h1 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight text-balance">
-          {nombreCiudad.toUpperCase()}
+          {nombreCiudad}
         </h1>
         <Card className="w-xl">
           <CardHeader>
@@ -26,9 +27,13 @@ export default function Nombre() {
           <CardContent>
             <p className="leading-7 [&:not(:first-child)]:mt-6">
               Esta página recibe un parametro en la ruta /proyecto/ciudades/[nombre] y lo muestra en el texto de arriba.
+              Parametro recibido: <strong>{nombreCiudad}</strong>
             </p>
           </CardContent>
         </Card>
+        <Button asChild className="w-50 mx-auto">
+          <Link href="/proyecto/ciudades">Ir a ciudades</Link>
+        </Button>
       </main>
     </>
   );

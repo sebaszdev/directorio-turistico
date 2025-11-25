@@ -24,9 +24,11 @@ export default function Medellin() {
         <h2 className="scroll-m-20 pb-2 text-3xl text-center text-card-foreground font-semibold tracking-tight first:mt-0">
           Poblacion: 2.6 millones de paisas
         </h2>
-        <p className="leading-7 text-center text-card-foreground [&:not(:first-child)]:mt-10">
+      <div className="w-200 mx-auto">
+        <p className="leading-7 text-center text-card-foreground not(:first-child)]:mt-10">
           Medellín, conocida como la “Ciudad de la Eterna Primavera”, se destaca por su clima agradable y su espíritu innovador. Rodeada de montañas, combina modernidad con tradición paisa. Es un centro cultural y tecnológico en constante transformación.
         </p>
+        </div>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl text-center my-10 font-semibold tracking-tight first:mt-0">
           Atracciones turisticas en medellin
         </h2>

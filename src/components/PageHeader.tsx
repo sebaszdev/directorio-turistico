@@ -5,27 +5,28 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+
+interface Props {
+  className?: string;
+  botones: {texto: string, link: string}[];
+};
 
 /**
  * Header que contiene un nav para navegar
  */
-export default function PageHeader() {
+export default function PageHeader({ className, botones }: Props) {
   return (
-    <header className="flex justify-center py-3 bg-muted">
+    <header className={cn("flex justify-center py-3", className)}>
       <NavigationMenu>
         <NavigationMenuList className="flex-wrap">
-          <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link href="/proyecto/ciudades" className="hover:underline">Ciudades</Link>
+          {botones.map((boton, index) => (
+            <NavigationMenuItem key={index}>
+              <NavigationMenuLink asChild className="rounded-xl">
+                <Link href={boton.link} className="hover:underline">{boton.texto}</Link>
               </NavigationMenuLink>
             </NavigationMenuItem>
-          <NavigationMenuItem />
-          <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Link href="/proyecto/contacto" className="hover:underline">Contacto</Link>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          <NavigationMenuItem />
+          ))}
         </NavigationMenuList>
       </NavigationMenu>
     </header>

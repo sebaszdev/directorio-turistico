@@ -1,6 +1,7 @@
 import CityCard from "@/components/CityCard";
 import GridContainer from "@/components/GridContainer";
 import type { Boton } from "@/components/CityCard";
+import PageHeader from "@/components/PageHeader";
 
 export default function Ciudades() {
   const ciudades:
@@ -59,18 +60,32 @@ export default function Ciudades() {
       },
     ];
 
+  const botones = [
+    {
+      texto: "Proyecto",
+      link: "/proyecto",
+    },
+    {
+      texto: "Contacto",
+      link: "/proyecto/contacto",
+    },
+  ];
+
   return (
-    <main className="flex-1 flex flex-col justify-center bg-muted">
-      <GridContainer>
-        {ciudades.map((ciudad, index) => (
-          <CityCard
-            key={index}
-            nombre={ciudad.nombre}
-            imgUrl={ciudad.imgUrl}
-            boton={ciudad.boton}
-          />
-          ))}
-      </GridContainer>
-    </main>
+    <>
+      <PageHeader className="bg-muted" botones={botones} />
+      <main className="flex-1 flex flex-col justify-center bg-muted">
+        <GridContainer>
+          {ciudades.map((ciudad, index) => (
+            <CityCard
+              key={index}
+              nombre={ciudad.nombre}
+              imgUrl={ciudad.imgUrl}
+              boton={ciudad.boton}
+            />
+            ))}
+        </GridContainer>
+      </main>
+    </>
   );
 }

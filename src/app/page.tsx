@@ -8,7 +8,7 @@ import {
 export default function Home() {
   return (
     <>
-      <main className="flex flex-1 flex-col justify-center">
+      <main className="flex flex-1 flex-col justify-center bg-muted">
         <div className="w-full flex gap-x-10 justify-center my-auto">
           <StudentCard 
             name="Juan Sebastian Pabuena Gomez"
