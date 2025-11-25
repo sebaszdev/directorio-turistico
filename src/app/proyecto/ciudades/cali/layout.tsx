@@ -1,4 +1,4 @@
-export default function BogotaLayout({
+export default function CaliLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

@@ -3,15 +3,12 @@ import { Snowflake, MoveRight } from "lucide-react";
 import Link from "next/link";
 import {
   Card,
-  CardAction,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
-export default function BogotaPage() {
+export default function Bogota() {
   return (
     <>
       <div className="grid grid-cols-3 grid-rows-2 gap-4 h-screen bg-muted">
