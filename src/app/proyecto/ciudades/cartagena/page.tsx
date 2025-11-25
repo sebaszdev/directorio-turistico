@@ -5,6 +5,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Cartagena() {
   return (
@@ -18,11 +20,14 @@ export default function Cartagena() {
             <TreePalm size={30} color="#df8e1d" className="my-auto" />
           </div>
           <h2 className="scroll-m-20 pb-2 text-3xl text-center font-semibold tracking-tight first:mt-0">
-            0.9 millones de cartageneros
+            Población: 0.9 millones de cartageneros
           </h2>
           <p className="leading-7 text-center [&:not(:first-child)]:mt-6">
             Cartagena, Colombia, es una ciudad costera famosa por su Ciudad Amurallada, arquitectura colonial y vibrante cultura caribeña. Combina playas, historia y vida nocturna, lo que la convierte en uno de los destinos turísticos más importantes del país.
           </p>
+          <Button className="w-50 mx-auto" asChild>
+            <Link href="/proyecto/ciudades">Ir a ciudades</Link>
+          </Button>
         </div>
         <div className="h-full flex justify-evenly row-span-2 py-40
         bg-[url(https://lp-cms-production.imgix.net/features/2013/01/Cartagena_Colombia_cs-b9a2c77a9fe3.jpg)]
@@ -47,7 +52,7 @@ export default function Cartagena() {
               </p>
             </CardContent>
           </Card>
-</div>
+        </div>
       </div>
     </>
   );
