@@ -17,7 +17,7 @@ interface Props {
 }
 
 /**
- * Tarjeta propia para presentar la información de nosotros
+ * Tarjeta propia para presentar mi información
  */
 export default function StudentCard({ name, program, description, children }: Props) {
   return (
